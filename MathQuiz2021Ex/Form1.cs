@@ -23,6 +23,14 @@ namespace MathQuiz2021Ex
         int minuend;
         int subtrahend;
 
+        //Store variable for the multiplication
+        int multiplicand;
+        int multiplier;
+
+        //Store variable for the multiplication division
+        int dividend;
+        int divisor;
+
         //Keeps track of the remaining time.
         int timeLeft;
 
@@ -54,6 +62,25 @@ namespace MathQuiz2021Ex
             //Make sure that the value is zero when the quiz starts
             difference.Value = 0;
 
+            //Create the number that will be used in the the multiplication quiz
+            multiplicand = randomizer.Next(2, 11);
+            multiplier = randomizer.Next(2, 11);
+            //Convert the number into string they can be added to the UI
+            timesLeftLabel.Text = multiplicand.ToString();
+            timesRightLabel.Text = multiplier.ToString();
+            //Make sure that the value is zero when the quiz starts
+            product.Value = 0;
+
+            //Create the number that will be used in the the division quiz
+            divisor = randomizer.Next(2, 11);
+            int temporaryQuotient = randomizer.Next(2, 11);
+            dividend = divisor * temporaryQuotient;
+            //Convert the number into string they can be added to the UI
+            dividedLeftLabel.Text = dividend.ToString();
+            dividedRightLabel.Text = divisor.ToString();
+            //Make sure that the value is zero when the quiz starts
+            quotient.Value = 0;
+
             //Start the timer
             timeLeft = 30;
             timeLabel.Text = "30 seconds!";
@@ -68,7 +95,9 @@ namespace MathQuiz2021Ex
         private bool CheckTheAnswer()
         {
             if ((addend1 + addend2 == sum.Value)
-                && (minuend - subtrahend == difference.Value))
+                && (minuend - subtrahend == difference.Value)
+                && (multiplicand * multiplier == product.Value)
+                && (dividend / divisor == quotient.Value))
                 return true;
             else
                 return false;
@@ -155,6 +184,8 @@ namespace MathQuiz2021Ex
                 MessageBox.Show("You didn't finish in time.", "Sorry!");
                 sum.Value = addend1 + addend2;
                 difference.Value = minuend - subtrahend;
+                product.Value = multiplicand * multiplier;
+                quotient.Value = dividend / divisor;
                 startButton.Enabled = true;
             }
         }
