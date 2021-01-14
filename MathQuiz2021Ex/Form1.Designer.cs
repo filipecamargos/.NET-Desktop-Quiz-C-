@@ -130,6 +130,7 @@ namespace MathQuiz2021Ex
             this.sum.Name = "sum";
             this.sum.Size = new System.Drawing.Size(100, 35);
             this.sum.TabIndex = 2;
+            this.sum.Enter += new System.EventHandler(this.answer_Enter);
             // 
             // difference
             // 
@@ -139,6 +140,7 @@ namespace MathQuiz2021Ex
             this.difference.Size = new System.Drawing.Size(100, 35);
             this.difference.TabIndex = 3;
             this.difference.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
+            this.difference.Enter += new System.EventHandler(this.answer_Enter);
             // 
             // equal_2
             // 
@@ -191,6 +193,7 @@ namespace MathQuiz2021Ex
             this.product.Name = "product";
             this.product.Size = new System.Drawing.Size(100, 35);
             this.product.TabIndex = 4;
+            this.product.Enter += new System.EventHandler(this.answer_Enter);
             // 
             // equal_3
             // 
@@ -240,6 +243,7 @@ namespace MathQuiz2021Ex
             this.quotient.Name = "quotient";
             this.quotient.Size = new System.Drawing.Size(100, 35);
             this.quotient.TabIndex = 5;
+            this.quotient.Enter += new System.EventHandler(this.answer_Enter);
             // 
             // equal_4
             // 
