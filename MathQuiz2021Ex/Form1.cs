@@ -37,6 +37,8 @@ namespace MathQuiz2021Ex
         public Form1()
         {
             InitializeComponent();
+            //Set the date on the top
+            date.Text = DateTime.Now.ToString("dd MMMM yyyy");
         }
 
         /// <summary>
@@ -85,7 +87,6 @@ namespace MathQuiz2021Ex
             timeLeft = 30;
             timeLabel.Text = "30 seconds!";
             QuizTimer.Start();
-
 
         }
         /// <summary>
@@ -171,6 +172,10 @@ namespace MathQuiz2021Ex
             }
             else if (timeLeft > 0)
             {
+                if(timeLeft <= 25)
+                {
+                    timeLabel.ForeColor = Color.FromArgb(255, 0, 0);
+                }
                 // Display the new time left by updating the Time Left label.
                 timeLeft = timeLeft - 1;
                 timeLabel.Text = timeLeft + " seconds!";
@@ -200,6 +205,16 @@ namespace MathQuiz2021Ex
                 int lengthOfAnswer = answerBox.Value.ToString().Length;
                 answerBox.Select(0, lengthOfAnswer);
             }
+        }
+
+        private void timeTItleLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void date_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

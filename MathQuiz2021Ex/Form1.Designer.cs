@@ -30,6 +30,7 @@ namespace MathQuiz2021Ex
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.timeLabel = new System.Windows.Forms.Label();
             this.timeTItleLabel = new System.Windows.Forms.Label();
             this.plusLeftLabel = new System.Windows.Forms.Label();
@@ -54,6 +55,7 @@ namespace MathQuiz2021Ex
             this.dividedLeftLabel = new System.Windows.Forms.Label();
             this.startButton = new System.Windows.Forms.Button();
             this.QuizTimer = new System.Windows.Forms.Timer(this.components);
+            this.date = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.sum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.difference)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.product)).BeginInit();
@@ -65,7 +67,7 @@ namespace MathQuiz2021Ex
             this.timeLabel.AccessibleName = "";
             this.timeLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.timeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.timeLabel.Location = new System.Drawing.Point(214, 9);
+            this.timeLabel.Location = new System.Drawing.Point(272, 10);
             this.timeLabel.Name = "timeLabel";
             this.timeLabel.Size = new System.Drawing.Size(200, 30);
             this.timeLabel.TabIndex = 0;
@@ -75,11 +77,12 @@ namespace MathQuiz2021Ex
             // 
             this.timeTItleLabel.AutoSize = true;
             this.timeTItleLabel.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.timeTItleLabel.Location = new System.Drawing.Point(94, 8);
+            this.timeTItleLabel.Location = new System.Drawing.Point(159, 9);
             this.timeTItleLabel.Name = "timeTItleLabel";
             this.timeTItleLabel.Size = new System.Drawing.Size(107, 28);
             this.timeTItleLabel.TabIndex = 1;
             this.timeTItleLabel.Text = "Time Left";
+            this.timeTItleLabel.Click += new System.EventHandler(this.timeTItleLabel_Click);
             // 
             // plusLeftLabel
             // 
@@ -302,11 +305,23 @@ namespace MathQuiz2021Ex
             this.QuizTimer.Interval = 1000;
             this.QuizTimer.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // date
+            // 
+            this.date.AutoSize = true;
+            this.date.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.date.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.date.Location = new System.Drawing.Point(12, 17);
+            this.date.Name = "date";
+            this.date.Size = new System.Drawing.Size(0, 19);
+            this.date.TabIndex = 23;
+            this.date.Click += new System.EventHandler(this.date_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(482, 353);
+            this.Controls.Add(this.date);
             this.Controls.Add(this.startButton);
             this.Controls.Add(this.quotient);
             this.Controls.Add(this.equal_4);
@@ -331,6 +346,7 @@ namespace MathQuiz2021Ex
             this.Controls.Add(this.timeTItleLabel);
             this.Controls.Add(this.timeLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Filipe Ferreira Math Quiz";
@@ -370,6 +386,7 @@ namespace MathQuiz2021Ex
         private System.Windows.Forms.Label dividedLeftLabel;
         private System.Windows.Forms.Button startButton;
         private System.Windows.Forms.Timer QuizTimer;
+        private System.Windows.Forms.Label date;
     }
 }
 
