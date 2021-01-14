@@ -289,6 +289,7 @@ namespace MathQuiz2021Ex
             this.startButton.TabIndex = 1;
             this.startButton.Text = "Start Quiz";
             this.startButton.UseVisualStyleBackColor = true;
+            this.startButton.Click += new System.EventHandler(this.startButton_Click);
             // 
             // Form1
             // 
@@ -322,6 +323,7 @@ namespace MathQuiz2021Ex
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Filipe Ferreira Math Quiz";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.sum)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.difference)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.product)).EndInit();
