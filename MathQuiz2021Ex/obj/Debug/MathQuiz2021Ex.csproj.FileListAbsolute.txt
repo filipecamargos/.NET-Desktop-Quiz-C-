@@ -1,0 +1,10 @@
+C:\Users\filip\OneDrive\Desktop\BYUI Semester\BYUI 8th Semester\CIT 365\Week 02\MathQuiz\MathQuiz2021Ex\MathQuiz2021Ex\bin\Debug\MathQuiz2021Ex.exe.config
+C:\Users\filip\OneDrive\Desktop\BYUI Semester\BYUI 8th Semester\CIT 365\Week 02\MathQuiz\MathQuiz2021Ex\MathQuiz2021Ex\bin\Debug\MathQuiz2021Ex.exe
+C:\Users\filip\OneDrive\Desktop\BYUI Semester\BYUI 8th Semester\CIT 365\Week 02\MathQuiz\MathQuiz2021Ex\MathQuiz2021Ex\bin\Debug\MathQuiz2021Ex.pdb
+C:\Users\filip\OneDrive\Desktop\BYUI Semester\BYUI 8th Semester\CIT 365\Week 02\MathQuiz\MathQuiz2021Ex\MathQuiz2021Ex\obj\Debug\MathQuiz2021Ex.csprojAssemblyReference.cache
+C:\Users\filip\OneDrive\Desktop\BYUI Semester\BYUI 8th Semester\CIT 365\Week 02\MathQuiz\MathQuiz2021Ex\MathQuiz2021Ex\obj\Debug\MathQuiz2021Ex.Form1.resources
+C:\Users\filip\OneDrive\Desktop\BYUI Semester\BYUI 8th Semester\CIT 365\Week 02\MathQuiz\MathQuiz2021Ex\MathQuiz2021Ex\obj\Debug\MathQuiz2021Ex.Properties.Resources.resources
+C:\Users\filip\OneDrive\Desktop\BYUI Semester\BYUI 8th Semester\CIT 365\Week 02\MathQuiz\MathQuiz2021Ex\MathQuiz2021Ex\obj\Debug\MathQuiz2021Ex.csproj.GenerateResource.cache
+C:\Users\filip\OneDrive\Desktop\BYUI Semester\BYUI 8th Semester\CIT 365\Week 02\MathQuiz\MathQuiz2021Ex\MathQuiz2021Ex\obj\Debug\MathQuiz2021Ex.csproj.CoreCompileInputs.cache
+C:\Users\filip\OneDrive\Desktop\BYUI Semester\BYUI 8th Semester\CIT 365\Week 02\MathQuiz\MathQuiz2021Ex\MathQuiz2021Ex\obj\Debug\MathQuiz2021Ex.exe
+C:\Users\filip\OneDrive\Desktop\BYUI Semester\BYUI 8th Semester\CIT 365\Week 02\MathQuiz\MathQuiz2021Ex\MathQuiz2021Ex\obj\Debug\MathQuiz2021Ex.pdb
